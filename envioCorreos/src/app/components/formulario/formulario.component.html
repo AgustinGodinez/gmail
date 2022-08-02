@@ -1,0 +1,18 @@
+<form [formGroup]="datos">
+    <div class="container body-form w-50 mt-5 p-4" style="background-color: antiquewhite;">
+        <div class="text-center">
+            <h1>Enviar Correos</h1>
+        </div>
+        <div class="mb-3">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Asunto" formControlName="asunto">
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje" formControlName="mensaje"></textarea>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" (click)="envioCorreo()">Primary</button>
+        </div>
+    </div>
+</form>
